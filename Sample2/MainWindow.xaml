@@ -1,0 +1,19 @@
+﻿<Window x:Class="Sample2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sample2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <local:MyControl MyString="Value A">
+                <Button Content="Content A" Command="{x:Static local:MyControl.MyCommand}"  Margin="0,0,0,10"/>
+            </local:MyControl>
+            <local:MyControl MyString="Value B">
+                <Button Content="Content B" Command="{x:Static local:MyControl.MyCommand}"/>
+            </local:MyControl>
+        </StackPanel>
+    </Grid>
+</Window>
