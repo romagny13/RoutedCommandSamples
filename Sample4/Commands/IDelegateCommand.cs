@@ -3,7 +3,7 @@
 namespace Sample4.Commands
 {
     /// <summary>
-    /// The relay command interface.
+    /// The delegate command interface.
     /// </summary>
     public interface IDelegateCommand : ICommand
     {

@@ -31,12 +31,13 @@ namespace Sample4
             }
         }
 
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
         public MainWindowViewModel()
         {
             //this.canExecute = true;
         }
-
-        public event PropertyChangedEventHandler PropertyChanged;
 
         private void OnPropertyChanged(string propertyName)
         {
